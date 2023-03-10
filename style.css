@@ -1,0 +1,74 @@
+:root {
+  --primary-color-dark: #38598b;
+  --primary-color-light: #e7eaf6;
+}
+
+body {
+  background-image: url(/img/52-528280_rainmeter-wallpaper-anime.jpg);
+}
+.container {
+  max-width: 600px;
+  margin: auto 0;
+  padding: 30px 172px 11px;
+}
+.top-left {
+  display: flex;
+  justify-content: flex-start;
+}
+.the-day__title {
+  margin-top: 0;
+  margin-bottom: 4rem;
+  /* margin-left: 3rem; */
+  font-family: "Bree Serif", serif;
+  color: var(--primary-color-light);
+}
+
+.top {
+  display: flex;
+  /* justify-content: flex-start; */
+}
+.search {
+  position: relative;
+  left: 10rem;
+  top: 1.5rem;
+  /* margin-left: 30rem; */
+}
+.search-bar {
+  padding: 1rem;
+  width: 40rem;
+  opacity: 0.1;
+}
+.search-submit {
+  position: relative;
+  left: 38rem;
+  bottom: 3.1rem;
+  padding: 0.98rem 2.5rem;
+  font-family: "Noto Serif", serif;
+}
+.days {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 5rem;
+}
+.days div {
+  padding: 0 5rem;
+}
+.days p {
+  margin-left: 45px;
+  color:black
+  font-family: "Bree Serif", serif;
+  font-size: 20px;
+}
+.days img {
+  position: relative;
+  right: 1rem;
+}
+.search form {
+  /* display: inline;
+  margin: 50px 50px; */
+}
+img {
+  border-radius: 50%;
+  width: 130px;
+}
