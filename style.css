@@ -5,6 +5,7 @@
 
 body {
   background-image: url(/img/52-528280_rainmeter-wallpaper-anime.jpg);
+  font-family: "Bree Serif", serif;
 }
 .container {
   max-width: 600px;
@@ -12,8 +13,10 @@ body {
   padding: 30px 172px 11px;
 }
 .top-left {
+  text-align: center;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 .the-day__title {
   margin-top: 0;
@@ -21,6 +24,9 @@ body {
   /* margin-left: 3rem; */
   font-family: "Bree Serif", serif;
   color: var(--primary-color-light);
+}
+.the-day-tempreture {
+  font-size: 3rem;
 }
 
 .top {
@@ -31,17 +37,25 @@ body {
   position: relative;
   left: 10rem;
   top: 1.5rem;
+  color: black;
   /* margin-left: 30rem; */
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .search-bar {
   padding: 1rem;
   width: 40rem;
-  opacity: 0.1;
+  /* opacity: 0.1; Can be done with background-color */
+  background-color: rgba(255, 255, 255, 0.4);
+  /* shadow: none;
+  border: none;
+  outline: none; */
 }
 .search-submit {
   position: relative;
-  left: 38rem;
-  bottom: 3.1rem;
   padding: 0.98rem 2.5rem;
   font-family: "Noto Serif", serif;
 }
@@ -52,17 +66,19 @@ body {
   padding-left: 5rem;
 }
 .days div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 0 5rem;
+  text-align: center;
 }
 .days p {
-  margin-left: 45px;
-  color:black
+  color: black;
   font-family: "Bree Serif", serif;
   font-size: 20px;
 }
 .days img {
   position: relative;
-  right: 1rem;
 }
 .search form {
   /* display: inline;
