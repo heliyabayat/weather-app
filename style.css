@@ -5,6 +5,7 @@
 
 body {
   background-image: url(/img/52-528280_rainmeter-wallpaper-anime.jpg);
+  font-family: "Bree Serif", serif;
 }
 .container {
   max-width: 600px;
@@ -14,6 +15,8 @@ body {
 .top-left {
   display: flex;
   justify-content: flex-start;
+  text-align: center;
+  align-items: center;
 }
 .the-day__title {
   margin-top: 0;
@@ -22,28 +25,39 @@ body {
   font-family: "Bree Serif", serif;
   color: var(--primary-color-light);
 }
-
+.the-day-tempreture {
+  font-size: 3rem;
+  border-right: 5px solid black;
+  padding-right: 1rem;
+}
 .top {
   display: flex;
-  /* justify-content: flex-start; */
 }
 .search {
   position: relative;
   left: 10rem;
   top: 1.5rem;
+  color: black;
   /* margin-left: 30rem; */
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .search-bar {
   padding: 1rem;
   width: 40rem;
-  opacity: 0.1;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
 }
 .search-submit {
   position: relative;
-  left: 38rem;
-  bottom: 3.1rem;
   padding: 0.98rem 2.5rem;
-  font-family: "Noto Serif", serif;
+  font-family: "Bree Serif", serif;
 }
 .days {
   display: flex;
@@ -52,17 +66,19 @@ body {
   padding-left: 5rem;
 }
 .days div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 0 5rem;
+  text-align: center;
 }
 .days p {
-  margin-left: 45px;
-  color:black
+  color: black;
   font-family: "Bree Serif", serif;
   font-size: 20px;
 }
 .days img {
   position: relative;
-  right: 1rem;
 }
 .search form {
   /* display: inline;
