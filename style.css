@@ -2,7 +2,9 @@
   --primary-color-dark: #38598b;
   --primary-color-light: #e7eaf6;
 }
-
+a {
+  text-decoration: none;
+}
 body {
   background-image: url(/img/52-528280_rainmeter-wallpaper-anime.jpg);
   font-family: "Bree Serif", serif;
@@ -25,10 +27,15 @@ body {
   font-family: "Bree Serif", serif;
   color: var(--primary-color-light);
 }
-.the-day-tempreture {
+.the-day-temperature {
   font-size: 3rem;
-  border-right: 5px solid black;
+  /* border-right: 5px solid black; */
   padding-right: 1rem;
+}
+#celsius-link,
+#fahrenheit-link {
+  font-size: 1rem;
+  color: var(--primary-color-light);
 }
 .top {
   display: flex;
