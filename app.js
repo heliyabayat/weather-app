@@ -15,26 +15,20 @@ let month = months[now.getMonth()];
 
 h2.innerHTML = ` ${date} ${month} ${hours}:${min}`;
 
-// function searchCity(event) {
-//   event.preventDefault();
-//   let searchInput = document.querySelector("#search-text-input");
-//   console.log(searchInput.value);
-// }
-// let form = document.querySelector("#search-form");
-// form.addEventListener("submit", searchCity);
-
 function search(event) {
   event.preventDefault();
-  let cityElement = document.querySelector("#city-name");
-  let cityInput = document.querySelector("#city-input");
-  cityElement.innerHTML = cityInput.value;
+  let searchInput = document.querySelector("#search-text-input");
+  // alert("searching");
+  // console.log(searchInput.value);
+  let h1 = document.querySelector("h1");
+  h1.innerHTML = `search for ${searchInput.value}....`;
 }
-let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", search);
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", search);
 
 function convertToFahrenheit(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#the-day-temperature");
+  let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = 66;
 }
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
@@ -42,9 +36,8 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 function convertToCelsius(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#the-day-temperature");
+  let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = 19;
-
-  let celsiusLink = document.querySelector("#celsius-link");
-  celsiusLink.addEventListener("click", convertToCelsius);
 }
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", convertToCelsius);
