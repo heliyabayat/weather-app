@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,7 +24,7 @@
     <!----------------------TOP LEFT--------------------START----->
     <div class="top container">
       <div class="top-left">
-        <div>
+        <div id="img-container">
           <img
             class="top-left__img"
             src="/img/weather-icons-bqra/CloudRainThunder.png"
@@ -32,21 +33,27 @@
           <h1 class="city-name">CityName</h1>
           <h2 id="city-date">city date</h2>
         </div>
-        <span class="the-day-temperature" id="temperature">19</span
-          ><span class="units">
-            <a href="#" id="celsius-link">°C</a>
-            <a href="#" id="fahrenheit-link">°F</a>
-          </span>
+        <span class="the-day-temperature" id="temperature"></span>
+        <span class="units celsius">
+          <a href="#" id="celsius-link">°C</a>
+          <a href="#" id="fahrenheit-link">°F</a>
+        </span>
+
         <!-- <div class="top-left-weather">
           <h2 class="the-day-temprature">10<sup>C</sup>  -->
-        </div>
         <!----------------------TOP LEFT--------------------END----->
 
         <!----------------------SEARCH----------------------START--->
         <div class="search">
           <form action="" id="search-form">
-            <input class="search-bar" id="search-text-input" type="text" autofocus="on" autocomplete="off"/>
-            <input class="search-submit" type="submit" value="search"/>
+            <input
+              class="search-bar"
+              id="search-text-input"
+              type="text"
+              autofocus="on"
+              autocomplete="off"
+            />
+            <input class="search-submit" type="submit" value="search" />
           </form>
         </div>
       </div>
@@ -103,6 +110,7 @@
         <p>Wednesday</p>
       </div>
     </div>
+    <div class="test"></div>
     <script src="app.js"></script>
   </body>
 </html>

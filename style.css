@@ -95,3 +95,12 @@ img {
   border-radius: 50%;
   width: 130px;
 }
+.units.celsius #fahrenheit-link {
+  display: none;
+}
+.units.fahrenheit #celsius-link {
+  display: none;
+}
+.test {
+  content: "\03d";
+}
