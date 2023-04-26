@@ -38,6 +38,7 @@ function displayWeatherCondition(response) {
 }
 function search(event) {
   event.preventDefault();
+  console.log("button clicked");
   let searchInput = document.querySelector("#search-text-input");
   // alert("searching");
   // console.log(searchInput.value);
