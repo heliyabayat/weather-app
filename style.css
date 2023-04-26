@@ -10,7 +10,7 @@ body {
   --finn: #714674ff;
   --rose-taupe: #9f6976ff;
   --old-rose: #cc8b79ff;
-  --sandy-brown: #faae7bff;
+  --sandy-brown: rgb(230, 148, 94);
 
   background: linear-gradient(
     to right,
@@ -98,6 +98,7 @@ form {
   justify-content: flex-start;
   padding-left: 5rem;
 }
+
 .days div {
   display: flex;
   flex-direction: column;
@@ -111,6 +112,17 @@ form {
 }
 .days img {
   position: relative;
+}
+h3 span {
+  font-size: 1.5rem;
+}
+.morning {
+  color: #c3b8ed;
+  margin-right: 1rem;
+}
+.night {
+  color: #1e1b4b;
+  box-shadow: 1rem black;
 }
 
 .search form {
